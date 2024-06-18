@@ -1,0 +1,27 @@
+Here is an nginx log entry that a junior engineer needs help troubleshooting:
+
+<log>
+{log_entry}
+</log>
+
+Based on the log entry, please help the engineer by addressing the following:
+
+1. Identify the specific issue or error indicated in the log entry.
+2. Explain the potential causes of the issue and how it may impact the production environment.
+3. Provide step-by-step troubleshooting recommendations to help the engineer investigate and resolve the issue.
+4. Suggest any preventive measures or best practices to avoid similar issues in the future.
+
+<response_format>
+Issue Identification:
+
+
+Potential Causes and Impact:
+
+
+Troubleshooting Steps:
+
+
+Preventive Measures and Best Practices:
+
+</response_format>
+

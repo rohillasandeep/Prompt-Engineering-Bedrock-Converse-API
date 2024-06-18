@@ -1,0 +1,1 @@
+2023/05/21 18:15:45 [crit] 12345#12345: *5432109 SSL_do_handshake() failed (SSL: error:14094438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error) while SSL handshaking, client: 192.168.1.102, server: 0.0.0.0:443

@@ -1,0 +1,5 @@
+[error] 28#28: *156761 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 24.130.243.12, server: api.mycompany.com, request: "GET /v3/users HTTP/1.1", upstream: "http://10.32.12.25:8080/v3/users", host: "api.mycompany.com"
+
+[error] 28#28: *156762 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 24.130.243.12, server: api.mycompany.com, request: "GET /v3/users HTTP/1.1", upstream: "http://10.32.12.25:8080/v3/users", host: "api.mycompany.com"
+
+[error] 28#28: *156763 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 24.130.243.12, server: api.mycompany.com, request: "GET /v3/users HTTP/1.1", upstream: "http://10.32.12.25:8080/v3/users", host: "api.mycompany.com"

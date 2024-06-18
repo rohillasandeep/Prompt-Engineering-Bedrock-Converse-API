@@ -1,0 +1,9 @@
+Hi, I'm seeing a lot of 504 Gateway Timeout errors for one of our key API endpoints. It started happening frequently about an hour ago. Here are the relevant nginx logs from that timeframe:
+
+[error] 28#28: *156761 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 24.130.243.12, server: api.mycompany.com, request: "GET /v3/users HTTP/1.1", upstream: "http://10.32.12.25:8080/v3/users", host: "api.mycompany.com"
+
+[error] 28#28: *156762 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 24.130.243.12, server: api.mycompany.com, request: "GET /v3/users HTTP/1.1", upstream: "http://10.32.12.25:8080/v3/users", host: "api.mycompany.com"
+
+[error] 28#28: *156763 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 24.130.243.12, server: api.mycompany.com, request: "GET /v3/users HTTP/1.1", upstream: "http://10.32.12.25:8080/v3/users", host: "api.mycompany.com"
+
+Any ideas what could be causing this and how I can resolve it? Let me know if you need any other details!

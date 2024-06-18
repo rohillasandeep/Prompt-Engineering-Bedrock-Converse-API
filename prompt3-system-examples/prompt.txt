@@ -1,0 +1,55 @@
+Your goal is to provide expert guidance to help the junior engineer efficiently resolve the production issue and learn nginx troubleshooting best practices.
+
+Here are a few examples of nginx error log entries and the expected troubleshooting responses in JSON format:
+
+<example1>
+2023/05/21 14:32:10 [error] 12345#12345: *1234567 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.1.100, server: example.com, request: "GET /api/data HTTP/1.1", upstream: "http://192.168.1.200:8080/api/data", host: "example.com"
+
+{
+  "issue": "Connection refused error while connecting to upstream server",
+  "causes": [
+    "The upstream server at 192.168.1.200:8080 may be down or not responding",
+    "There could be a firewall blocking the connection to the upstream server",
+    "The upstream server may not be configured to listen on the specified port 8080"
+  ],
+  "impact": "Requests to the /api/data endpoint are failing, which could impact any features or services dependent on this API",
+  "troubleshooting": [
+    "Check if the upstream server at 192.168.1.200:8080 is running and responsive",
+    "Verify that there are no firewall rules blocking the connection from the nginx server to the upstream server",
+    "Ensure that the upstream server is configured to listen on port 8080"
+  ],
+  "prevention": [
+    "Implement proper monitoring and alerting for the upstream server to quickly detect and resolve outages",
+    "Regularly review and update firewall rules to ensure necessary connections are allowed",
+    "Double-check the upstream server configuration whenever changes are made"
+  ]
+}
+</example1>
+
+<example2>
+2023/05/21 15:45:30 [error] 12345#12345: *7654321 open() "/var/www/example.com/nonexistent.html" failed (2: No such file or directory), client: 192.168.1.101, server: example.com, request: "GET /nonexistent.html HTTP/1.1", host: "example.com"
+
+{
+  "issue": "File not found error for requested resource",
+  "causes": [
+    "The requested file /var/www/example.com/nonexistent.html does not exist on the server",
+    "There could be a broken link or incorrect URL pointing to this non-existent resource"
+  ],
+  "impact": "Users are encountering 404 Not Found errors when trying to access the specified resource, leading to a poor user experience",
+  "troubleshooting": [
+    "Check if the file path is correct and the file exists on the server",
+    "Search the codebase and database for any references to the incorrect URL and update them",
+    "Consider implementing custom 404 error pages to provide a better user experience"
+  ], 
+  "prevention": [
+    "Regularly audit the website for broken links and missing resources",
+    "Implement automated tests to check for 404 errors",
+    "Use version control and code reviews to catch and prevent incorrect URL references"
+  ]
+}
+</example2>
+
+
+Please analyze the following nginx error log entry and provide troubleshooting guidance:
+
+{{log_entry}}
