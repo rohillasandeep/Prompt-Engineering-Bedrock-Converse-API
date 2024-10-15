@@ -8,16 +8,15 @@ The **Bedrock Converse API** enables seamless interaction with various foundatio
 ## Repository Contents
 The repository contains the following key files and folders:
 
-- **`base.py`**: Basic implementation for initiating a conversation with the Bedrock API.
+- **`base.py`**: A basic implementation for initiating a conversation with the Bedrock API.
 - **`base_with_image.py`**: Demonstrates how to include image prompts in the conversation flow.
 - **`base_with_system.py`**: Focuses on system prompts and how they guide the conversation.
-- **`tools-functions/`**: A collection of tools and functions designed for Bedrock's Converse API.
-- **`prompts`**: Several prompt examples to handle different conversational contexts:
-  - **`prompt-decomposition`**
-  - **`prompt1`**
-  - **`prompt2-system`**
-  - **`prompt3-system-examples`**
-- **`house.webp`**: Sample image file used in one of the examples.
+- **`tools-functions/`**: A collection of utility functions and tools designed to enhance the use of the Bedrock Converse API.
+- **`prompts/`**: Examples of various prompt designs to handle different conversational scenarios:
+  - **`prompt-decomposition/`**: An example demonstrating how to improve performance and reduce latency with large context windows in conversations.
+  - **`prompt-evaluation/`**: A prompt evaluation example using cosine similarity with [scikit-learn](https://scikit-learn.org/), evaluating results from a hackathon against a golden dataset.
+  - **`prompt1`**, **`prompt2-system`**, **`prompt3-system-examples`**: Examples showcasing different conversation flows and system-guided interactions.
+- **`house.webp`**: A sample image file used in some image prompt examples.
 
 ## Setup Instructions
 To run the examples in this repository, follow these steps:
@@ -36,6 +35,6 @@ To run the examples in this repository, follow these steps:
 - base.py: A basic conversation example.
 - base_with_image.py: Incorporates image prompts into conversations.
 - base_with_system.py: Demonstrates the use of system prompts to direct the conversation's flow.
-- prompts/: Different examples of conversation prompts to test and fine-tune responses based on system prompts and other variables.
-- prompt-decomposition/: Notebook showcasing example of increased performance / reduced latency when working with very large context windows
-- prompt-evaluation/: showcases example of evaluating prompts by ranking them through consin using [skitlearn](https://scikit-learn.org/). use-case discussed evaluates results of completions of various teams participating in a hackathon against golden dataset.
+- prompt*/: Different examples of conversation prompts to test and fine-tune responses based on system prompts and other variables.
+- prompt-decomposition/: A notebook that demonstrates increased performance and reduced latency when working with large context windows.
+- prompt-evaluation/:A prompt evaluation example that uses cosine similarity, powered by [skitlearn](https://scikit-learn.org/). to rank and compare different team submissions from a hackathon against a golden dataset.
