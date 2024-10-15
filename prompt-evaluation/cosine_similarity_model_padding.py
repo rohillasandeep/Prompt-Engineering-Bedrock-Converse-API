@@ -67,12 +67,6 @@ def compute_cosine_similarity(ground_truth_data, completion_data):
         golden_embeddings_normalized = normalize(golden_embeddings)
         llm_embeddings_normalized = normalize(llm_embeddings)
 
-        # Compute cosine similarity for each corresponding pair of embeddings
-        pairwise_similarities = []
-        for golden, llm in zip(golden_embeddings_normalized, llm_embeddings_normalized):
-            sim = cosine_similarity([golden], [llm])  # Compute cosine similarity for each pair
-            pairwise_similarities.append(sim[0][0])  # Extract the value from the matrix
-
         # Compute cosine similarities between each pair (golden vs all LLM embeddings)
         pairwise_similarities = []
         for i, golden in enumerate(golden_embeddings_normalized):
