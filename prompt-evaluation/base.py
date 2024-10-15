@@ -1,5 +1,5 @@
 import os
-import mybase
+import execute
 import time
 # Get the current working directory
 current_directory = os.getcwd() + "/files"
@@ -12,6 +12,6 @@ for file_name in os.listdir(current_directory):
     if file_name.endswith(".csv"):
         #print("~~~~~~~~~~~~~~~~~~")
         #print(file_name)
-        mybase.process_similarity(current_directory+"/"+file_name, 'golden-data.txt')
+        execute.process_similarity(current_directory+"/"+file_name, 'golden-data.txt')
         time.sleep(1)
 
