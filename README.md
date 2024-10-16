@@ -30,6 +30,11 @@ To run the examples in this repository, follow these steps:
     ```bash
     pip install -r requirements.txt
 
+3. Setup AWS CLI if execting workshop outside of AWS Environment otherwise use IAM Roles/Permissions on the EC2/SageMaker Studio
+   ```bash
+   Setup AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html
+   Assign Role to EC2: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#generate-policy-for-iam-role
+
 **File Details**
 
 - base.py: A basic conversation example.
