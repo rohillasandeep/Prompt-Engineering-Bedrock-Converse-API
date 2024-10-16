@@ -34,6 +34,7 @@ To run the examples in this repository, follow these steps:
    ```bash
    Setup AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html
    Assign Role to EC2: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#generate-policy-for-iam-role
+   Execution Roles for SageMaker Studio:  https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-roles.html
 
 **File Details**
 
